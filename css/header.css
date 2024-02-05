@@ -1,0 +1,38 @@
+/* FUNÇÕES GERAIS DO HEADER */
+header {
+    border-bottom: 2px solid #F07500;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    height: 80px;
+    background: linear-gradient(0.25turn, #0A234C , #61B3C8);
+}
+
+.header-titulo span {
+    z-index: 2;
+    font-family: 'Protest Strike', sans-serif;
+    color: #D7E2E8;
+}
+
+.header-titulo p {
+    font-size: 1em;
+    color: #D7E2E8;
+    text-align: center;
+}
+
+/* PARA TELAS MOBILE */
+@media (max-width: 600px ) {
+    .header-titulo span {
+        font-size: 2em;
+    }
+}
+
+
+/* PARA TELAS DESKTOP */
+@media (min-width: 601px) {
+    .header-titulo span {
+        font-size: 3em;
+    }
+}

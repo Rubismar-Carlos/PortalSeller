@@ -1,0 +1,116 @@
+/* FUNÇÕES GERAIS PARA O FOOTER */
+footer {
+    border-top: 1px solid #216fdb;
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    box-shadow: 0px -2px 20px 0px #216fdb;
+    background: linear-gradient(0.25turn, #0A234C , #61B3C8);
+    /*background: linear-gradient(0.25turn, #0A234C 50%, #216fdb);*/
+    padding-bottom: 30px;
+}
+
+/* IMAGEM DA LOGO DA EMPRESA NO FOOTER */
+.logo-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-img-footer {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    padding: 10px;
+    position: relative;
+    top: -70px;
+}
+
+.logo-footer img {
+    width: 100%;
+    height: 100%;
+    border-radius: 70%;
+    box-shadow: 0px 0px 10px 0px #216fdb;
+}
+
+/* INFORMÇÕES NO FOOTER */
+
+.main-footer {
+    width: 100%;
+}
+
+.container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.container-footer h3{
+    color: lightgray;
+    padding: 2px;
+}
+
+.p-footer, .container-footer p {
+    color: lightgray;
+    font-size: 1em;
+    padding: 2px;
+}
+
+.container-footer a {
+    font-size: 1em;
+    color: lightgray;
+}
+
+.container-footer a:hover {
+    color: #fa8313;
+    padding-left: 5px;
+}
+
+.container-footer li {
+    padding: 5px;
+}
+
+.box-footer {
+    width: 350px;
+    text-align: left;
+}
+
+.box-footer h3 {
+    margin-bottom: 10px;
+}
+
+.end-footer {
+    border-top: 1px solid #fa8313;
+    padding-top: 30px;
+}
+
+.img-end-footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.end-footer img {
+    width: 180px;
+    height: 100px;
+}
+
+
+/* PARA TELAS MOBILE */
+@media (max-width: 600px) {
+    .container-footer {
+        gap: 20px;
+        justify-content: left;
+    }
+}
+
+/* PARA TELAS DESKTOP */
+@media (min-width: 601px) {
+    .container-footer {
+        gap: 30px;
+        justify-content: center;
+    }
+}

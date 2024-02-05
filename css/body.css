@@ -1,0 +1,216 @@
+/* DADOS GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-image: url("https://i.imgur.com/S3z3R4d.png");
+}
+
+/* CONTAINER COM INFORMAÇÕES SOBRE PORTAL SELLER */
+.container-ps {
+    background: linear-gradient(0.25turn, #0A234C , #61B3C8);
+    width: 100%;
+    margin-bottom: 30px;
+    padding-top: 60px;
+}
+
+.container-ps h2 {
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: 'PT Serif', serif;
+    color: #D7E2E8;
+    margin-top: 60px;
+}
+
+.info-ps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    z-index: 0;
+}
+
+.info-ps h1 {
+    margin-bottom: 20px;
+    color: #fa8313;
+    font-family: 'PT Serif', serif;
+}
+
+.info-ps p {
+    margin-bottom: 20px;
+    color: #D7E2E8;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+}
+
+/* IMAGEM SOBRE PORTAL SELLER */
+.img-ps {
+    width: 500px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.p-ps {
+    width: 350px;
+    font-size: 0.9em;
+    margin-bottom: 30px;
+}
+
+.img-ps img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border-top: 1px solid #fa8313;
+    box-shadow: 0px 0px 5px 0px #fa8313;
+}
+
+/* BUTÃO DE ACESSO AO SITE PORTAL SELLER */
+.btn-ps button {
+    width: 150px;
+    height: 50px;
+    border: 1px solid #F07500;
+    background-color: #f88a22;
+    box-shadow: 0px 0px 5px 0px #fa7900;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 1.2em;
+}
+
+.btn-ps button:hover {
+    background-color: #fa7900;
+    transition: 1.5s;
+}
+
+/* TITULO SOBRE EMPRESAS QUE POSSUEM PORTAL SELLER */
+.main-titulo {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/* CAIXA DAS EMPRESAS */
+.box {
+    width: 250px;
+    height: 250px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    z-index: 0;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 0px #216fdb;
+}
+
+.box:hover {
+    box-shadow: 0px 0px 5px 0px #fa7900;
+}
+
+/* IMAGEM DA CAIXA DAS EMPRESAS */
+.box-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-img img {
+    width: 95%;
+    align-items: center;
+}
+
+/* NOME DA EMPRESA DENTRO DA CAIXA */
+.box-nome {
+    text-align: center;
+    top: -6%;
+    position: relative;
+}
+
+.box-nome-empresa {
+    border-radius: 10px;
+    padding: 5px 15px 5px 15px;
+    z-index: 1;
+    color: white;
+    box-shadow: 0px 0px 10px -4px #F07500;
+    border: 1px solid #F07500;
+    font-size: 1.4em;
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #ec9a4e;
+}
+
+.box-nome-empresa:hover {
+    box-shadow: none;
+    background-color: #f88a22;
+    transition: 1s;
+}
+
+/* PARA TELAS MOBILE */
+@media (max-width: 600px) {
+
+    /* FONTE DA INFORMAÇÃO SOBRE O PORTAL SELLER */
+    .info-ps h1 {
+        font-size: 1.5em;
+    }
+    
+    .container-ps h2 {
+        font-size: 1.5em;
+    }
+
+    /* CONTAINER DAS CAIXAS DAS EMPRESAS */
+    main {
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+        align-items: center;
+    }
+
+    .container-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+        width: 100%;
+    }
+
+}
+
+/* PARA TELAS DESKTOP */
+@media (min-width: 601px) {
+
+    /* FONTE DA INFORMAÇÃO SOBRE O PORTAL SELLER */
+    .container-ps h2, .info-ps h1 {
+        font-size: 2em;
+    }
+
+    /* CONTAINER DAS CAIXAS DAS EMPRESAS */
+    main {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .container-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 100px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
